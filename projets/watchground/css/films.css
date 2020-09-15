@@ -1,0 +1,192 @@
+/* Squelette des pages web */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #C8F5FF;
+}
+
+.carousel {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+}
+
+.navbar {
+    background:linear-gradient(45deg,#3cdbc6,#14b19c,#1b6ecc,#175cdd);
+}
+
+.nav-title {
+    font-size: 2em;
+    font-family: Lobster;
+    color: black;
+}
+
+.nav-title:hover {
+
+    text-decoration: none;
+    color: black;
+}
+
+#brand-image {
+   
+    margin-right: 5px;
+}
+
+.header-title {
+    display: inline;
+}
+
+ 
+.connexion-img, .inscription-img, .categ-img {
+    width: 35px;
+    display: none;
+}
+
+  .carteFilm {
+    background-color: #125aac;
+    border-radius: 10px;
+}
+
+.card-img-top {
+    border: 2px solid navy;
+}
+
+.carteFilm:hover {
+    opacity: 0.8;
+}
+
+.text-responsive {
+    font-size: 1.5vw;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card:active{
+    transform: scale(1);
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h5.card-title, h6.card-subtitle, p.card-text {
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;    
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 30%;
+  width: 30%;
+}
+
+/*
+#action, #aventure, #comedie, #derniersFilms, #autresFilms {
+    padding-top: 60px;
+}
+*/
+
+.footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    font-size: 70%;
+    background-color: #1b6ecc;
+    text-align: center;
+}
+   
+
+
+.footer span {
+    color: rgb(14, 104, 182);
+    font-size: 150%;
+}
+
+
+/* Modals */
+
+@font-face {
+	font-family: muli;
+	src: url("../fonts/muli/static/Muli-Black.ttf");
+}
+
+.modal label {
+	font-family: muli;
+}
+
+.modal-content{
+    border: 10px solid #1b6ecc;
+    
+}
+
+.modal-header, .modal-footer {
+	background: #1b6ecc;
+}
+
+.close {
+	color: white;
+}
+
+
+.form-check-inline {
+    width: 100%;
+}
+
+.form-check-label {
+    color: white;
+   
+}
+
+
+.form-check-input {
+	width: 1.5em;
+    height:1.5em;
+
+}
+
+.modal input[type="submit"] {
+	background-color: #175cdd;
+	color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    #carousel {
+        margin-top: 10%;
+    }
+}
+
+
+@media only screen and (max-width: 420px) {
+    #carousel {
+        width: 100%;
+        margin-top: 20%;
+    }
+
+    .header-title {
+          display: none;  
+    }
+
+.connexion, .inscription {
+    display: none;
+}
+
+    .connexion-img, .inscription-img {
+        display: block;
+        margin-right: 20%;
+    }
+    .categ {
+        display: none;
+    }
+
+    .categ-img {
+        display: inline;
+    }
+
+    
+}

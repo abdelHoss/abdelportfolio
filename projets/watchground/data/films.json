@@ -1,0 +1,270 @@
+  [
+    
+   { 
+       "filmName" : "Pulp Fiction",
+       "year" : "1994",
+       "duration" : "178",
+       "producer" : "Quentin Tarantino",
+       "category" : "Action",
+       "image" : "images/action/pulp_fiction.jpg"
+      
+   },
+   
+   
+     {
+       "filmName" : "American History X",
+       "year" : "1998",
+       "duration" : "119",
+       "producer" : "Tony Kaye",
+       "category" : "Action",
+       "image" : "images/action/american_history.jpg"
+       
+   },
+   
+   
+     {
+       "filmName" : "Bad Boys",
+       "year" : "1995",
+       "duration" : "119",
+       "producer" : "Micheal Bay",
+       "category" : "Action",
+       "image" : "images/action/bad_boys.jpg"
+   },
+   
+   
+   
+     {
+       "filmName" : "Gran Torino",
+       "year" : "2007",
+       "duration" : "120",
+       "producer" : "Clint Eastwood",
+       "category" : "Action",
+       "image" : "images/action/gran_torino.jpg"
+   },
+   
+   
+   
+     {
+       "filmName" : "Die Hard",
+       "year" : "1988",
+       "duration" : "132",
+       "producer" : "John McTiernan",
+       "category" : "Action",
+       "image" : "images/action/die_hard.jpg"
+     
+   },
+   
+   
+   {
+       "filmName" : "Mad Max : Fury Road",
+       "year" : "2015",
+       "duration" : "120",
+       "producer" : "George Miller",
+       "category" : "Action",
+       "image" : "images/action/mad_max.jpg"
+   },
+   
+   
+   
+     {
+       "filmName" : "The Road",
+       "year" : "2009",
+       "duration" : "119",
+       "producer" : "John Hillcoat",
+       "category" : "Action",
+       "image" : "images/action/the_road.jpg"
+   },
+
+   {
+    "filmName" : "The Usual Suspect",
+    "year" : "1995",
+    "duration" : "108",
+    "producer" : "Bryan Singer",
+    "category" : "Action",
+    "image" : "images/action/usual_suspect.jpg"
+},
+   
+{
+    "filmName" : "L.A. Confidential",
+    "year" : "1997",
+    "duration" : "138",
+    "producer" : "Curtis Hanson",
+    "category" : "Action",
+    "image" : "images/action/la_confidential.jpg"
+},
+   
+     {
+       "filmName" : "Black Panther",
+       "year" : "2018",
+       "duration" : "135",
+       "producer" : "Ryan Coogler",
+       "category" : "Aventure",
+       "image" : "images/aventure/black_panther.jpg"
+   },
+   
+   
+   {
+    "filmName" : "Indiana Jones",
+    "year" : "1981",
+    "duration" : "115",
+    "producer" : "Steven Spielberg",
+    "category" : "Aventure",
+    "image" : "images/aventure/indiana_jones.jpg"
+},
+
+
+{
+    "filmName" : "Casino Royale",
+    "year" : "2006",
+    "duration" : "145",
+    "producer" : "Martin Campbell",
+    "category" : "Aventure",
+    "image" : "images/aventure/casino_royale.jpg"
+},
+
+
+{
+    "filmName" : "Interstellar",
+    "year" : "2015",
+    "duration" : "169",
+    "producer" : "Christopher Nolan",
+    "category" : "Aventure",
+    "image" : "images/aventure/interstellar.jpg"
+},
+
+
+{
+    "filmName" : "Jumanji",
+    "year" : "1995",
+    "duration" : "164",
+    "producer" : "Joe Johnston",
+    "category" : "Aventure",
+    "image" : "images/aventure/jumanji.jpg"
+},
+
+
+{
+    "filmName" : "Mulan",
+    "year" : "2020",
+    "duration" : "120",
+    "producer" : "Niki Caro",
+    "category" : "Aventure",
+    "image" : "images/aventure/mulan.jpg"
+},
+
+
+{
+    "filmName" : "Jurassic Park",
+    "year" : "1993",
+    "duration" : "127",
+    "producer" : "Stephen Spielberg",
+    "category" : "Aventure",
+    "image" : "images/aventure/jurassic_park.jpg"
+},
+
+
+{
+    "filmName" : "Suicide Squad",
+    "year" : "2016",
+    "duration" : "137",
+    "producer" : "David Ayer",
+    "category" : "Aventure",
+    "image" : "images/aventure/suicide_squad.jpg"
+},
+
+
+{
+    "filmName" : "Venom",
+    "year" : "2018",
+    "duration" : "140",
+    "producer" : "Ruben Fleischer",
+    "category" : "Aventure",
+    "image" : "images/aventure/venom.jpg"
+},
+
+
+
+     {
+       "filmName" : "Anchorman : The Legend of Ron Burgundy",
+       "year" : "2004",
+       "duration" : "104",
+       "producer" : "Adam Mckay",
+       "category" : "Comédie",
+       "image" : "images/comedie/anchorman.jpg"
+   },
+   
+   
+   {
+    "filmName" : "Grown Ups",
+    "year" : "2010",
+    "duration" : "102",
+    "producer" : "Dennis Dugan",
+    "category" : "Comédie",
+    "image" : "images/comedie/grown_ups.jpg"
+},
+
+{
+    "filmName" : "one flew over the cuckoo's nest",
+    "year" : "1975",
+    "duration" : "134",
+    "producer" : "Miloš Forman",
+    "category" : "Comédie",
+    "image" : "images/comedie/one_flew.jpg"
+},
+
+{
+    "filmName" : "The Benchwarmers",
+    "year" : "2006",
+    "duration" : "98",
+    "producer" : "Dennis Dugan",
+    "category" : "Comédie",
+    "image" : "images/comedie/benchwarmer.jpg"
+},
+
+{
+    "filmName" : "Zookeeper",
+    "year" : "2011",
+    "duration" : "112",
+    "producer" : "Frank Coraci",
+    "category" : "Comédie",
+    "image" : "images/comedie/zookeeper.jpg"
+},
+
+{
+    "filmName" : "Scooby Doo",
+    "year" : "2002",
+    "duration" : "89",
+    "producer" : "Raja Gosnell",
+    "category" : "Comédie",
+    "image" : "images/comedie/scooby_doo.jpg"
+},
+
+{
+    "filmName" : "Spy",
+    "year" : "2015",
+    "duration" : "130",
+    "producer" : "Paul Feig",
+    "category" : "Comédie",
+    "image" : "images/comedie/spy.jpg"
+},
+
+{
+    "filmName" : "Rush Hour",
+    "year" : "1998",
+    "duration" : "98",
+    "producer" : "Brett Ratner",
+    "category" : "Comédie",
+    "image" : "images/comedie/rush_hour.jpg"
+},
+
+{
+    "filmName" : "Paul Blart : Mall Cop",
+    "year" : "2009",
+    "duration" : "91",
+    "producer" : "Steve Carr",
+    "category" : "Comédie",
+    "image" : "images/comedie/paul_blart.jpg"
+}
+
+
+]

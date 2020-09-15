@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/uikit.min.css" type="text/css">
+    <link rel="stylesheet" href="css/labo3.css" type="text/css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+</head>
+
+<body onload="requete()">
+   <div id="alert" class="uk-alert-danger" uk-alert>
+    <a onclick="closeAlert()" class="closeBtn">&#88;</a>
+    <h2 id="message"></h2><span><img class="alert-img" src="images/icons/warning.svg"></span>
+</div>
+    <header>
+        <h1>Gestions des hospitalisations<span class="header-icon"><img src="images/icons/header-icon.png" draggable="false"></span></h1>
+    </header>
+    <nav class="uk-navbar-container">
+        <ul>
+            <li><a onclick="lister('patient',patient,alertPatient)">Liste des patients</a></li>
+            <li><a onclick="lister('etablissement',etab,alertEtab)">Liste des établissements</a></li>
+            <li><a onclick="lister('hospitalisation',hosp,alertHosp)">Liste des hospitalisations</a></li>
+            <li><a onclick="showSel(1)">Hospitalisation par patient</a></li>
+            <li><a onclick="showSel(2)">Hospitalisation par établissement et par spécialité</a></li>
+        </ul>
+    </nav>
+    <section>
+    <span id="closeButton" onclick="closeTab()">&#88;</span>
+        <div id="carousel" class="uk-position-relative uk-visible-toggle uk-light uk-align-center" tabindex="-1" uk-slideshow="animation: scale">
+            <ul class="uk-slideshow-items">
+                <li><img src="images/tool.jpg" uk-cover></li>
+                <li><img src="images/field.jpg" uk-cover></li>
+                <li><img src="images/doctors.jpg" uk-cover></li>
+                <li><img src="images/example.jpg" uk-cover></li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover left-wing" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover right-wing" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+        </div>
+
+        <div id="tableau">
+
+        </div>
+    </section>
+    <footer></footer>
+</body>
+<script src="js/requetes.js"></script>
+<script src="js/hospitalisations.js"></script>
+
+</html>

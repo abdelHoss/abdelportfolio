@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+
+    width: 100%;
+
+}
+
+
+.restaurant-text {
+    font-family: lobster;
+    font-size: 45px;
+    font-style: italic;
+}
+
+.mySlides {
+    margin: auto;
+    display: none;
+    width: 80%;
+    height: auto;
+}
+
+.w3-button {
+    width: 5em;
+    height: auto;
+}
+
+.w3-button:hover {
+    background-color: transparent
+}
+
+.select-container {
+    width: 100%;
+}
+
+.select-container .w3-select {
+    width: 60%;
+    margin: 5% 20% 5%;
+}
+
+
+.first-container,
+.second-container {
+    width: 100%;
+
+}
+
+span {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: -6%;
+}
+
+
+.container-ul li {
+    display: inline;
+    margin-right: 5%;
+}
+
+ul li img {
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
+
+@media (max-width: 750px) {
+    .restaurant-text {
+        display: none;
+    }
+}

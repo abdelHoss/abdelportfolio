@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>The calculator</title>
+	<link rel="stylesheet" type="text/css" href="Style/calculate.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div id="theCalc">
+		<input id="theResult" disabled> <br>
+		<div>
+			<input type="button" value="1" onclick="theAdding(1)">
+
+			<input type="button" value="2" onclick="theAdding(2)">
+
+			<input type="button" value="3" onclick="theAdding(3)"><br>
+
+			<input type="button" value="4" onclick="theAdding(4)">
+
+			<input type="button" value="5" onclick="theAdding(5)">
+
+			<input type="button" value="6" onclick="theAdding(6)"><br>
+
+			<input type="button" value="7" onclick="theAdding(7)">
+
+			<input type="button" value="8" onclick="theAdding(8)">
+
+			<input type="button" value="9" onclick="theAdding(9)"><br>
+
+			<input type="button" value="0" onclick="theAdding(0)">
+
+			<input type="button" value="&#43;" onclick="theAdding('+')">
+			<input type="button" value="&#x2212;" onclick="theAdding('-')"><br>
+			<input type="button" value="&#10005;" onclick="theAdding('*')">
+			<input type="button" value="&#xf7;" onclick="theAdding('/')">
+			<input type="button" value="&#x3d;" onclick="equal()">
+			<input type="button" value="C" onclick="document.querySelector('#theResult').value = '' ">
+			<input type="button" value="." onclick="theAdding('.')">
+			<input type="button" value="&#8592;" onclick="theReturn()">
+
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript" src="js/calculate.js"></script>
+</html>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<listeEtab>
+    
+    <etablissement>
+       <num_etab>1234</num_etab>
+        <nom>Centre hospitalier Sud</nom>
+        <adresse>1234 boul sud, Montréal, Qc </adresse>
+        <code_postal>H2M 3Y6</code_postal>
+        <tel>(514) 123-1234</tel>
+    </etablissement>
+    
+      <etablissement>
+       <num_etab>2346</num_etab>
+        <nom>Hôpital Nord</nom>
+        <adresse>7562 rue du Souvenir, Nordville, Qc</adresse>
+        <code_postal>J4R 2Z5</code_postal>
+        <tel>(450) 222-3333</tel>
+    </etablissement> 
+     
+     
+      <etablissement>
+       <num_etab>3980</num_etab>
+        <nom>Hôpital Centre</nom>
+        <adresse>4637 boul de l'Église, Montréal, Qc</adresse>
+        <code_postal>h3J 4K8</code_postal>
+        <tel>(450) 345-6789</tel>
+    </etablissement>
+     
+      <etablissement>
+       <num_etab>4177</num_etab>
+        <nom>Centre hospitalier Est</nom>
+        <adresse>12 rue Bernard, Repentigny, Qc</adresse>
+        <code_postal>J8R 3K5</code_postal>
+        <tel>(450) 345-6789</tel>
+    </etablissement>
+     
+      <etablissement>
+       <num_etab>7306</num_etab>
+        <nom>Hôpital du salut</nom>
+        <adresse>11 rue de la Rédemption, St-Basile, Qc</adresse>
+        <code_postal>J8H 2D4</code_postal>
+        <tel>(450) 345-6789</tel>
+    </etablissement>
+     
+      <etablissement>
+       <num_etab>8895</num_etab>
+        <nom>Dernier Recours</nom>
+        <adresse>999 rue St-Pierre, Longueil, Qc</adresse>
+        <code_postal>J7B 3J8</code_postal>
+        <tel>(450) 555-6741</tel>
+    </etablissement>
+    
+</listeEtab>

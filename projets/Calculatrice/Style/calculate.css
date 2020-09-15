@@ -1,0 +1,51 @@
+#theCalc {
+
+    width: 300px;
+    height: 500px;
+    background-color: #47B2EB;
+    padding-top: 10px;
+    border-radius: 10px;
+    border: 1px solid navy;
+    margin: 2% auto;
+}
+
+#theResult {
+
+    width: 90%;
+    height: 40px;
+    background: #E5FDE5;
+    margin: 15px 10px 2px;
+    padding: 5px 0;
+    font-size: 20px;
+    line-height: 35px;
+    color: red;
+    font-size: 25px;
+
+
+}
+
+div div input {
+    width: 30%;
+    height: 45px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+div div {
+    text-align: center;
+    margin-top: 12%;     
+}
+
+@media only screen and (max-width: 768px) {
+    #theCalc {
+        width: 50%;
+        margin-top: 20%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #theCalc {
+        width: 90%;
+        margin-top: 30%;
+    }
+}
