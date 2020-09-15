@@ -1,7 +1,7 @@
 $('.carousel').carousel();
 
 $(document).ready(function(){
-    $("a").on('click', function(event) {
+    $(".header-link").on('click', function(event) {
       if (this.hash !== "") {
         event.preventDefault();
         var hash = this.hash;
