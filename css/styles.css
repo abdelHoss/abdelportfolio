@@ -81,7 +81,7 @@ body {
 }
 
 .header--bg {
-    background: url("../images/header-background_copy.png") no-repeat;
+    background: url("../images/header-background.png") no-repeat;
     background-size: cover;
     position: relative;
     z-index: 1;
