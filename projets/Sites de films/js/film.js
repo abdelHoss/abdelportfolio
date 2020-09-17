@@ -3,22 +3,6 @@ $('.carousel').carousel({
     pause: "false"
   });
 
-
-  function fixedBottom() {
-      if(window.innerWidth <= 420) {
-        let foot = document.querySelector('.footer');
-        foot.style.position = 'absolute';
-        foot.style.bottom = '0';
-        foot.style.left = '0'; 
-      }
-    
-  }
-
-  function looseBottom() {
-    let foot = document.querySelector('.footer');
-    foot.style.position = 'static';
-  }
-
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
   })
@@ -32,7 +16,6 @@ async function getContent(num) {
     for(let data of tabFilms) {
         switch(num) {
         case 0:
-            looseBottom();
             theTitle = "Tous nos films";
                 theContent += `<div class="col-4" style="float:left">
             <div class="card text-white carteFilm text-center pt-2 pb-2 mb-4">
@@ -48,7 +31,6 @@ async function getContent(num) {
         </div>`;
         break;       
         case 1:
-            fixedBottom();
             if(data.category=="Action") {
                 theTitle = "Les films d'action";
                 theContent += `<div class="col-4" style="float:left">
@@ -67,7 +49,6 @@ async function getContent(num) {
             }
             break;
             case 2:
-                fixedBottom();
                 if(data.category=="Aventure") {
                     theTitle = "Les films d'aventure";
                     theContent += `<div class="col-4" style="float:left">
@@ -85,7 +66,6 @@ async function getContent(num) {
                 }
                 break;
             default:
-                fixedBottom();
                     if(data.category=="Comédie") {
                         theTitle = "Les films de comédie";
                         theContent += `<div class="col-4" style="float:left">
