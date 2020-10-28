@@ -13,8 +13,8 @@ body {
 /*Styles for the header*/
 
 header {
-    /* background-image: linear-gradient(to right, #e5e5f0, #b1b6e6); */
-    background: red;
+    background-image: linear-gradient(to right, #e5e5f0, #b1b6e6);
+    /* background: red; */
     margin: auto;
     height: 15%;
     font-family: 'comic sans ms';
@@ -173,7 +173,7 @@ input:focus {
     color: #59585c;
     width: 10%;
     height: 100%;
-    line-height: 0.5em;
+    line-height: 0.7em;
     font-size: 35px;
     font-weight: bold;
 }
