@@ -13,8 +13,7 @@ body {
 /*Styles for the header*/
 
 header {
-    /* background-image: linear-gradient(to right, #e5e5f0, #b1b6e6); */
-    background-color: red;
+    background-image: linear-gradient(to right, #e5e5f0, #b1b6e6);
     margin: auto;
     height: 100px;
     font-family: 'comic sans ms';
