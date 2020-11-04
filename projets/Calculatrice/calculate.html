@@ -8,35 +8,40 @@
 </head>
 <body>
 	<div id="theCalc">
-		<input id="theResult" disabled> <br>
+			<div class="input-container">
+				<input id="theResult" disabled>
+			<div class="symbol"></div> 
+			</div>
+	
+
 		<div>
-			<input type="button" value="1" onclick="theAdding(1)">
+			<input type="button" value="1" onclick="theAdding(1, true)">
 
-			<input type="button" value="2" onclick="theAdding(2)">
+			<input type="button" value="2" onclick="theAdding(2, true)">
 
-			<input type="button" value="3" onclick="theAdding(3)"><br>
+			<input type="button" value="3" onclick="theAdding(3, true)"><br>
 
-			<input type="button" value="4" onclick="theAdding(4)">
+			<input type="button" value="4" onclick="theAdding(4, true)">
 
-			<input type="button" value="5" onclick="theAdding(5)">
+			<input type="button" value="5" onclick="theAdding(5, true)">
 
-			<input type="button" value="6" onclick="theAdding(6)"><br>
+			<input type="button" value="6" onclick="theAdding(6, true)"><br>
 
-			<input type="button" value="7" onclick="theAdding(7)">
+			<input type="button" value="7" onclick="theAdding(7, true)">
 
-			<input type="button" value="8" onclick="theAdding(8)">
+			<input type="button" value="8" onclick="theAdding(8, true)">
 
-			<input type="button" value="9" onclick="theAdding(9)"><br>
+			<input type="button" value="9" onclick="theAdding(9, true)"><br>
 
-			<input type="button" value="0" onclick="theAdding(0)">
+			<input type="button" value="0" onclick="theAdding(0, true)">
 
-			<input type="button" value="&#43;" onclick="theAdding('+')">
-			<input type="button" value="&#x2212;" onclick="theAdding('-')"><br>
-			<input type="button" value="&#10005;" onclick="theAdding('*')">
-			<input type="button" value="&#xf7;" onclick="theAdding('/')">
+			<input type="button" value="&#43;" onclick="theAdding('+',false)">
+			<input type="button" value="&#x2212;" onclick="theAdding('-',false)"><br>
+			<input type="button" value="&#10005;" onclick="theAdding('*',false)">
+			<input type="button" value="&#xf7;" onclick="theAdding('/',false)">
 			<input type="button" value="&#x3d;" onclick="equal()">
-			<input type="button" value="C" onclick="document.querySelector('#theResult').value = '' ">
-			<input type="button" value="." onclick="theAdding('.')">
+			<input type="button" value="C" onclick="erase()">
+			<input type="button" value="." onclick="theAdding('.',true)">
 			<input type="button" value="&#8592;" onclick="theReturn()">
 
 		</div>
