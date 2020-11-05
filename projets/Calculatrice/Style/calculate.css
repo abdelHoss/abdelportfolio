@@ -1,6 +1,6 @@
 @font-face {
     font-family: digital;
-    src: url('../fonts/digital-7.ttf');
+    src: url('../fonts/pocket_calcuatlor_ot.otf');
 
 }
 
@@ -45,12 +45,11 @@ body {
     height: 100%;
     border-width: 0;
     margin: 0;
-    font-size: 20px;
     color: red;
     font-family: digital;
-    font-size: 40px;
+    font-size: 50px;
     background: #E5FDE5;
-
+    
 }
 
 .symbol {
@@ -59,7 +58,7 @@ body {
     color: red;
     height: 100%;
     line-height: 50px;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: bold;
     padding-bottom: 2px;
      background: #E5FDE5;
