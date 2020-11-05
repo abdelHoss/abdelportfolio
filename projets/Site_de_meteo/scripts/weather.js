@@ -10,10 +10,25 @@ weatherApp.controller('weatherController', ['$scope', '$interval', '$timeout', f
     
     var activeClock = function () {
         $scope.fullDate = Date.now();
+  
     }
+
+
     
     $scope.cityInput = '';
     $interval(activeClock, 1000);
+  
+    $scope.reset = function() {
+                $scope.cityInput = '';
+                $scope.isEmpty = false;
+                $scope.showAlert = false;
+                $('.city_name').text("");
+                $('.city_temp').text("");
+                $('.city_feels_like').text("");
+                $('.city_des').text("");
+                $('.city_hum').text("");
+                $('#app-bg').css('background-image', 'url("images/cloud-bg.jpg")');
+            }
 
 
     $(document).keyup(function (event) {
@@ -46,21 +61,23 @@ weatherApp.controller('weatherController', ['$scope', '$interval', '$timeout', f
                 $('.city_feels_like').text(`${feels_like}°c`);
                 $('.city_des').text(data.weather[0].description);
                 $('.city_hum').text(`${data.main.humidity}%`);
-
-              
+                let imgUrl = '';
                 if (temp >= 20) {
-                    $('#app-bg').css('background-image', 'url("images/hot-weather-bg.jpg")');
+                     imgUrl = 'url("./images/hot-weather-bg.jpg")';
                 } else if (temp < 20 && temp > 0) {
-                    $('#app-bg').css('background-image', 'url("images/automn-weather-bg.jpg")');
+                    imgUrl =  'url("./images/automn-weather-bg.jpg")';
                 } else {
-                    $('#app-bg').css('background-image', 'url("images/cold-weather-bg.jpg")');
+                    imgUrl =  'url("./images/cold-weather-bg.jpg")'
                 }
-
+                $('#app-bg').css('background-image', imgUrl);
+                
+                
                 $(document).ready(function () {
                     $('.temp_info > ul > li').animate({
                         'opacity': 1,
                     });
                 });
+                $scope.showAlert = false;
             }).fail(() => {
                 $scope.showAlert = true;
                     $timeout(function () {
