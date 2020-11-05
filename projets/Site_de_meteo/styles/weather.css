@@ -7,6 +7,7 @@
 html,
 body {
     height: 100%;
+    width: 100%;
 
 }
 
@@ -14,9 +15,8 @@ body {
 
 header {
     background-image: linear-gradient(to right, #e5e5f0, #b1b6e6);
-    /* background: red; */
     margin: auto;
-    height: 15%;
+    min-height: 5em;
     font-family: 'comic sans ms';
 }
 
@@ -27,7 +27,8 @@ header {
     justify-content: space-between;
 }
 
-.logo, .clock-img {
+.logo,
+.clock-img {
     max-width: 4em;
 }
 
@@ -51,25 +52,49 @@ header {
     height: 100%;
     display: flex;
     justify-content: flex-end;
-    
+
 }
 
 .clock-list ul li {
-   margin-right: 3.5em;
+    margin-right: 4em;
 }
 
 .clock-list ul li span {
     line-height: 3em;
 }
 
+.question {
+    margin-right: 1em;
+}
+
+.question-img {
+    width: 2.5em;
+}
+.question:hover {
+    opacity: 0.6;
+}
+
+.clock-list ul.li-clock {
+    margin: 5em;
+}
+
+
 
 .city_time {
     font-size: 30px;
     font-style: italic;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 15px;
 
+}
+
+.modal {
+    font-family: 'comic sans ms';
+}
+
+.modal-header {
+    background: #b1b6e6;
 }
 
 /*Styles for the header*/
@@ -160,7 +185,7 @@ input.the-input {
     padding-left: 10px;
     background-color: #e8e9f0;
     font-family: 'Verdana'
-       
+
 }
 
 input:focus {
@@ -225,69 +250,74 @@ input:focus {
 /* Media queries for responsive display */
 
 @media only screen and (max-width: 768px) {
-header {
-    height: 10%;
+    header {
+        height: 10%;
 
-}
+    }
 
-#app-bg {
-    height: 90%;
-}
+    #app-bg {
+        height: 90%;
+    }
 
-.input-container {
-    margin-top: 1em; 
-}
+    .input-container {
+        margin-top: 1em;
+    }
 
-.input-container .input-group  {
-    width: 80%;
-}
+    .input-container .input-group {
+        width: 80%;
+    }
 
-.alert {
-    width: 70%;
-    left: 15%;
-}
+    .alert {
+        width: 70%;
+        left: 15%;
+    }
 
-.temp_info {
-    margin-top: 5em;
-}
+    .temp_info {
+        margin-top: 5em;
+    }
 
 }
 
 @media only screen and (max-width: 500px) {
 
-.title, .clock-img {
-    display: none;
-}
+    .title,
+    .clock-img {
+        display: none;
+    }
 
-.logo {
-    width: 4em;
-}
+    .img-li {
+        margin-left: -2em; 
+    }
 
-.alert {
-    width: 95%;
-    left: 2.5%;
-}
+    .logo {
+        width: 4em;
+    }
 
-.alert-text {
-    font-size: 20px;
-}
+    .alert {
+        width: 95%;
+        left: 2.5%;
+    }
+
+    .alert-text {
+        font-size: 20px;
+    }
 
 
-.input-container small {
-    font-size: 17px;
-    width: 90%;
-    position: fixed;
-    left: 5%;
-}   
+    .input-container small {
+        font-size: 17px;
+        width: 90%;
+        position: fixed;
+        left: 5%;
+    }
 
-.input-container .input-group  {
-    width: 100%;
-    padding-right: 10px;
-}
+    .input-container .input-group {
+        width: 100%;
+        padding-right: 10px;
+    }
 
-.temp_info {
-    margin-top: 2em;
-}
+    .temp_info {
+        margin-top: 2em;
+    }
 
 
 }
@@ -302,15 +332,17 @@ header {
         margin-top: 1em;
     }
 
-.city_name,.city_des {
-    font-size: 35px;
-}
+    .city_name,
+    .city_des {
+        font-size: 35px;
+    }
 
     .city_temp {
         font-size: 80px;
     }
 
-    .city_feels_like, .city_hum {
+    .city_feels_like,
+    .city_hum {
         font-size: 45px;
     }
 

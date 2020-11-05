@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg">
         <div>
             <ul class="logo-list">
-                <li><img class="logo" src="./images/header-logo.png" alt=""></li>
+                <li ng-click="reset()"><img class="logo" src="./images/header-logo.png" alt=""></li>
                 <li>
                     <h2 class="title">Weather App</h2>
                 </li>
@@ -11,8 +11,9 @@
 
         <div class="clock-list">
             <ul>
-             
-                <li>
+                
+                <li class="img-li">
+                    <a href="" data-toggle="modal" data-target="#info-modal" class="question btn"><img class="question-img" src="../images/question.png" alt=""></a>
                     <img class="clock-img" src="./images/clock.png">
                 </li>
                 <li>
