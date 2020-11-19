@@ -98,7 +98,7 @@ function autoDraw(a, b, c) {
 
     }
 
-    if (oppCount == 2) {
+    if (oppCount == 2 && myCount < 1) {
         for (let x in arguments) {
             if (!filled[arguments[x]] && !appWrote && !stopGame) {
                 block = document.getElementsByClassName('block')[arguments[x]];
@@ -114,7 +114,8 @@ function autoDraw(a, b, c) {
     } else if (myCount == 2 && oppCount < 1) {
         arg.push(a, b, c);
         blockOpp = true;
-    } else if (oppCount == 1 && myCount < 1) {
+    }
+     else if (oppCount == 1 && myCount < 1) {
         args.push(a, b, c);
         addOne = true;
     }
@@ -131,6 +132,7 @@ function autoDraw(a, b, c) {
                     filled[index] = true;
                     status[index] = oppSymbol;
                     blockOpp = false;
+                    addOne = false;
                     arg = [];
                 }
             });
@@ -239,7 +241,6 @@ function lose(d, e, f) {
     for (x in arguments) {
         block[arguments[x]].style.backgroundColor = '#ff4949';
     }
-    block.classList.remove('hover-class');
 }
 
 
