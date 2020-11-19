@@ -61,6 +61,10 @@ body h1 {
     background-size: cover;
 }
 
+.hover-block:hover {
+    background-color: #bbb9fc;
+}
+
 .radio-div {
     width: 50%;
     text-align: center;
@@ -80,74 +84,6 @@ label {
     border-radius: 4px;
     margin: 4% 30% 1%;
 }
-
-hr {
-    position: absolute;
-    height: 1em;
-    background-color: red;
-    border-width: 0px;
-}
-
-.line_0_1_2 {
-    width: 28em;
-    top: 14em;
-    display: none;
-}
-
-.line_3_4_5 {
-    width: 28em;
-    top: 23em;
-    display: none;
-}
-
-.line_6_7_8 {
-    width: 28em;
-    top: 32em;
-    display: none;
-}
-
-.line_0_3_6 {
-    transform: rotate(90deg);
-    width: 28em;
-    left: 19.5em;
-    top: 23em;
-    display: none;
-}
-
-.line_1_4_7 {
-    transform: rotate(90deg);
-    width: 28em;
-    left: 28.5em;
-    top: 23em;
-    display: none;
-}
-
-.line_2_5_8 {
-    transform: rotate(90deg);
-    width: 28em;
-    left: 38em;
-    top: 23em;
-    display: none;
-}
-
-.line_0_4_8 {
-    transform: rotate(45deg);
-    width: 38em;
-    left: 23.5em;
-    top: 23em;
-    display: none;
-}
-
-.line_2_4_6 {
-    transform: rotate(-45deg);
-    width: 38em;
-    left: 23.5em;
-    top: 23em;
-    display: none;
-}
-
-
-
 
 audio {
     display: none;
@@ -176,64 +112,7 @@ audio {
         width: 65%;
     }
 
-    .line_0_1_2 {
-        width: 65%;
-        top: 21%;
-
-    }
-
-    .line_3_4_5 {
-        width: 65%;
-        top: 36%;
-
-    }
-
-    .line_6_7_8 {
-        width: 65%;
-        top: 51%;
-
-    }
-
-    .line_0_3_6 {
-        transform: rotate(90deg);
-        width: 58%;
-        left: -1%;
-        top: 36%;
-
-    }
-
-    .line_1_4_7 {
-        transform: rotate(90deg);
-        width: 58%;
-        left: 20%;
-        top: 36%;
-
-    }
-
-    .line_2_5_8 {
-        transform: rotate(90deg);
-        width: 58%;
-        left: 42%;
-        top: 36%;
-
-    }
-
-    .line_0_4_8 {
-        transform: rotate(41deg);
-        width: 84%;
-        left: 8%;
-        top: 36%;
-
-    }
-
-    .line_2_4_6 {
-        transform: rotate(-41deg);
-        width: 84%;
-        left: 8%;
-        top: 36%;
-
-    }
-
+    
 }
 
 
@@ -266,61 +145,4 @@ audio {
     }
 
 
-    .line_0_1_2 {
-        width: 90%;
-        top: 28%;
-
-    }
-
-    .line_3_4_5 {
-        width: 90%;
-        top: 46%;
-
-    }
-
-    .line_6_7_8 {
-        width: 90%;
-        top: 64%;
-
-    }
-
-    .line_0_3_6 {
-        transform: rotate(90deg);
-        width: 90%;
-        left: -25%;
-        top: 46%;
-
-    }
-
-    .line_1_4_7 {
-        transform: rotate(90deg);
-        width: 90%;
-        left: 5%;
-        top: 46%;
-
-    }
-
-    .line_2_5_8 {
-        transform: rotate(90deg);
-        width: 90%;
-        left: 35%;
-        top: 46%;
-
-    }
-
-    .line_0_4_8 {
-        transform: rotate(46deg);
-        width: 120%;
-        left: -11%;
-        top: 45%;
-
-    }
-
-    .line_2_4_6 {
-        transform: rotate(-46deg);
-        width: 120%;
-        left: -10%;
-        top: 45%;
-
-    }
 }

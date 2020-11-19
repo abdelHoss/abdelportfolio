@@ -214,27 +214,34 @@ function verify(d, e, f) {
 }
 
 function win(d, e, f) {
-    barClass = `line_${d}_${e}_${f}`;
+    block = document.getElementsByClassName('block');
     winPlay.play();
     stopGame = true;
     modal.style.display = "block";
     result.innerHTML = 'You have won the game';
-    document.getElementsByClassName(barClass)[0].style.display = 'block';
+    for (x in arguments) {
+        block[arguments[x]].style.backgroundColor = '#53d3f3';
+    }
 }
 
 function lose(d, e, f) {
-    barClass = `line_${d}_${e}_${f}`;
+    block = document.getElementsByClassName('block');
     losePlay.play();
     stopGame = true;
     modal.style.display = "block";
     result.innerHTML = 'You lost the game';
-    document.getElementsByClassName(barClass)[0].style.display = 'block';
+    for (x in arguments) {
+        block[arguments[x]].style.backgroundColor = '#ff4949';
+    }
+    block.classList.remove('hover-class');
 }
 
 
 function fair() {
+    block = document.getElementsByClassName('block');
     fairPlay.play();
     stopGame = true;
     modal.style.display = "block";
     result.innerHTML = 'Fair match';
+    block.classList.remove('hover-class');
 }
