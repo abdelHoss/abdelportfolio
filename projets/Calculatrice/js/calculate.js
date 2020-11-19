@@ -1,14 +1,40 @@
 
 let theInput = document.getElementById("theResult");
 let tabChar = [];
+let displayTab = [];
 let error;
 let symbol = document.querySelector('.symbol');
 let equation = "";
+let multiplePoints = false;
+let multipleZeros = false;
 function theAdding(char, _bool) {
   if(!error) {
     switch(_bool) {
       case true:
-        theInput.value += char;
+        displayTab = theInput.value.split('');
+        if(char == '.') {
+          displayTab.map(char => {
+            if(char == '.') {
+              multiplePoints = true;
+            }
+          });
+        }
+        else if(char == '0') {
+          if(displayTab[0] == '0') {
+            multipleZeros = true;
+          }
+        }
+        else {
+          if(displayTab[0] == '0') {
+          let newValue = theInput.value;
+            theInput.value = newValue.slice(1, newValue);
+          }
+        }
+        if(!multiplePoints && !multipleZeros) {
+          theInput.value += char;
+        }
+        multiplePoints = false;
+        multipleZeros = false;
         break;
         default:
   
@@ -64,9 +90,7 @@ function equal() {
   for(let i of tabChar) {
     let row = tabChar.indexOf(i); 
     equation += i;
-    // alert(equation +" "+row);
   }
-  // alert(equation);
 
   theInput.value = eval(equation);  
     
