@@ -61,7 +61,7 @@ body h1 {
     background-size: cover;
 }
 
-.hover-block:hover {
+.block:hover {
     background-color: #bbb9fc;
 }
 

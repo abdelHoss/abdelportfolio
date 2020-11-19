@@ -219,6 +219,9 @@ function win(d, e, f) {
     stopGame = true;
     modal.style.display = "block";
     result.innerHTML = 'You have won the game';
+    for(x in status) {
+        block[x].style.backgroundColor = '#fff';
+    }
     for (x in arguments) {
         block[arguments[x]].style.backgroundColor = '#53d3f3';
     }
@@ -230,6 +233,9 @@ function lose(d, e, f) {
     stopGame = true;
     modal.style.display = "block";
     result.innerHTML = 'You lost the game';
+    for(x in status) {
+        block[x].style.backgroundColor = '#fff';
+    }
     for (x in arguments) {
         block[arguments[x]].style.backgroundColor = '#ff4949';
     }
@@ -243,5 +249,7 @@ function fair() {
     stopGame = true;
     modal.style.display = "block";
     result.innerHTML = 'Fair match';
-    block.classList.remove('hover-class');
+    for(x in status) {
+        block[x].style.backgroundColor = '#fff';
+    }
 }
