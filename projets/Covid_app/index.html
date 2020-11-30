@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/css/bulma.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/map.css" type="text/css">
+    <link rel="stylesheet" href="./css/covid.css" type="text/css">
+    <link rel="stylesheet" href="./css/queries.css" type="text/css">
+    <script src="./lib/js/jquery-3.5.1.min.js"></script>
+    <script src="./lib/js/angular.min.js"></script>
+    <script src="./lib/js/angular-route.min.js"></script>
+    <script src="./lib/js/angular-animate.min.js"></script>
+    <script src="./lib/js/d3.v5.min.js"></script>
+    <script src="./lib/js/topojson.min.js"></script>
+    <script src="./lib/js/d3-geo-projection.v1.min.js"></script>
+  
+    <title>Covid App</title>
+
+</head>
+
+<body ng-app="covidApp">
+    <div ng-controller="covidController">
+    <base href="/" />
+    <header ng-include="'views/header.html'" id="theHeader">
+        <div ng-view></div>
+    </header>
+    
+        <div class="view-container">
+            <div ng-view class="view-frame"></div>
+        </div>
+
+        <div class="modal-bg">
+        </div>
+
+        <footer class="footer" ng-include="'views/footer.html'">
+        <div ng-view></div>
+        </footer>
+    </div>
+</body>
+<script src="./js/routes.js"></script>
+<script src="./js/app.js"></script>
+<script src="./js/map.js"></script>
+
+</html>
