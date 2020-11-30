@@ -1,3 +1,0 @@
-https://corona.lmao.ninja/v2/continents?yesterday=true&sort
-
-https://corona.lmao.ninja/v2/countries?yesterday&sort
