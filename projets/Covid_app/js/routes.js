@@ -16,7 +16,7 @@
             controller: 'mapController'
          })
          .when('/countries', {
-             templateUrl: 'views/worldTab.html',
+             templateUrl: 'views/countries.html',
              controller: 'covidController'
          })
          .otherwise({
