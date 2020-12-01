@@ -6,18 +6,18 @@
 
      $routeProvider
          .when('/', {
-             templateUrl: 'views/home.html'
+             templateUrl: 'https://abdelhoss.github.io/abdelportfolio/projets/Covid_app/views/home.html'
          })
          .when('/covid-news', {
-            templateUrl: 'views/feeds.html',
+            templateUrl: 'https://abdelhoss.github.io/abdelportfolio/projets/Covid_app/views/feeds.html',
             controller: 'mapController'
          })
          .when('/world-data', {
-            templateUrl: 'views/map.html',
+            templateUrl: 'https://abdelhoss.github.io/abdelportfolio/projets/Covid_app/views/map.html',
             controller: 'mapController'
          })
          .when('/countries', {
-             templateUrl: 'views/worldTab.html',
+             templateUrl: 'https://abdelhoss.github.io/abdelportfolio/projets/Covid_app/views/worldTab.html',
              controller: 'covidController'
          })
          .otherwise({
