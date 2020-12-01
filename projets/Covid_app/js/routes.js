@@ -6,21 +6,21 @@
 
      $routeProvider
          .when('/', {
-             templateUrl: 'https://abdelhoss.github.io/abdelportfolio/projets/Covid_app/views/home.html'
+             templateUrl: 'views/home.html'
          })
-         .when('/covid-news', {
-            templateUrl: 'https://abdelhoss.github.io/abdelportfolio/projets/Covid_app/views/feeds.html',
-            controller: 'mapController'
-         })
-         .when('/world-data', {
-            templateUrl: 'https://abdelhoss.github.io/abdelportfolio/projets/Covid_app/views/map.html',
-            controller: 'mapController'
-         })
-         .when('/countries', {
-             templateUrl: 'https://abdelhoss.github.io/abdelportfolio/projets/Covid_app/views/worldTab.html',
-             controller: 'covidController'
-         })
-         .otherwise({
-             redirectTo: '/'
-         });
+        //  .when('/covid-news', {
+        //     templateUrl: 'views/feeds.html',
+        //     controller: 'mapController'
+        //  })
+        //  .when('/world-data', {
+        //     templateUrl: 'views/map.html',
+        //     controller: 'mapController'
+        //  })
+        //  .when('/countries', {
+        //      templateUrl: 'views/worldTab.html',
+        //      controller: 'covidController'
+        //  })
+        //  .otherwise({
+        //      redirectTo: '/'
+        //  });
  }]);
