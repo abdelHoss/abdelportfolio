@@ -1,22 +1,22 @@
  const covidApp = angular.module('covidApp', ['ngRoute','ngAnimate']);
  covidApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
-
+const gitUrl = 'https://abdelhoss.github.io/abdelportfolio/projets/Covid_app/';
 
      $locationProvider.html5Mode(true);
 
      $routeProvider
-         .when('/', {
+         .when(gitUrl+'/', {
              templateUrl: 'views/home.html'
          })
-         .when('/covid-news', {
+         .when(gitUrl+'/covid-news', {
             templateUrl: 'views/feeds.html',
             controller: 'mapController'
          })
-         .when('/world-data', {
+         .when(gitUrl+'/world-data', {
             templateUrl: 'views/map.html',
             controller: 'mapController'
          })
-         .when('/countries', {
+         .when(gitUrl+'/countries', {
              templateUrl: 'views/worldTab.html',
              controller: 'covidController'
          })
