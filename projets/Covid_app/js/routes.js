@@ -9,15 +9,15 @@ const gitRoute = 'https://abdelhoss.github.io/abdelportfolio/projets/Covid_app/'
          .when('/', {
              templateUrl: 'views/home.html'
          })
-         .when(gitRoute+'/covid-news', {
+         .when('/covid-news', {
             templateUrl: 'views/feeds.html',
             controller: 'mapController'
          })
-         .when(gitRoute+'/world-data', {
+         .when('/world-data', {
             templateUrl: 'views/map.html',
             controller: 'mapController'
          })
-         .when(gitRoute+'/countries', {
+         .when('/countries', {
              templateUrl: 'views/worldTab.html',
              controller: 'covidController'
          })
