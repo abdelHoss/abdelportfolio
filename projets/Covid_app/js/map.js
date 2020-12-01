@@ -6,7 +6,6 @@ covidApp.controller('mapController', ['$scope', '$http', '$templateCache', funct
     $('.modal-bg').add('.close-circle').on('click',() => {
         $('.circle-modal').removeClass('.slide-down');
         $('.circle-modal').addClass('swipe-up');
-        // $('.circle-modal').hide();
         $('.modal-bg').hide();
     })
 
@@ -127,7 +126,6 @@ covidApp.controller('mapController', ['$scope', '$http', '$templateCache', funct
                             if (i == 5) {
                                 let worldCases = $scope.worldNum.toString();
                                 let worldStr = '';
-                                // console.log(worldCases)
                                 for (let x = 1; x <= worldCases.length + 1; x++) {
                                     if (x % 3 === 0) {
                                         worldStr += ' ';
