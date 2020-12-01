@@ -5,18 +5,18 @@ covidApp.config(['$routeProvider', '$locationProvider', function ($routeProvider
     $locationProvider.html5Mode(true);
 
     $routeProvider
-        .when('/', {
+        .when('https://abdelhoss.github.io/abdelportfolio/projets/Covid_app/', {
             templateUrl: 'views/home.html'
         })
         .when('/covid-news', {
            templateUrl: 'views/feeds.html',
            controller: 'mapController'
         })
-        .when('/world-data', {
+        .when('https://abdelhoss.github.io/abdelportfolio/projets/Covid_app/world-data', {
            templateUrl: 'views/map.html',
            controller: 'mapController'
         })
-        .when('/countries', {
+        .when('https://abdelhoss.github.io/abdelportfolio/projets/Covid_app/countries', {
             templateUrl: 'views/worldTab.html',
             controller: 'covidController'
         })
