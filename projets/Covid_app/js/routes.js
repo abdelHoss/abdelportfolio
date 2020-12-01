@@ -1,6 +1,6 @@
  const covidApp = angular.module('covidApp', ['ngRoute','ngAnimate']);
  covidApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
-const gitUrl = 'https://abdelhoss.github.io/abdelportfolio/projets/Covid_app/';
+const gitUrl = 'https://abdelhoss.github.io/abdelportfolio/projets/Covid_app';
 
      $locationProvider.html5Mode(true);
 
