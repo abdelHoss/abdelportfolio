@@ -54,7 +54,7 @@ covidApp.controller('mapController', ['$scope', '$http', '$templateCache', funct
 
     const naData = svg.selectAll('circle').data([null]);
 
-    d3.json('../data/world-continents.json')
+    d3.json('https://abdelhoss.github.io/abdelportfolio/projets/Covid_app/data/world-continents.json')
         .then((data, error) => {
             if (error) console.log(error);
             const continent = topojson.feature(data, data.objects.continent);
