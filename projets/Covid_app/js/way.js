@@ -1,4 +1,4 @@
-const covidApp = angular.module('covidApp', ['ngRoute','ngAnimate']);
+ const covidApp = angular.module('covidApp', ['ngRoute','ngAnimate']);
  covidApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
 
 
