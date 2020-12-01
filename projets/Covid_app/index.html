@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./css/map.css" type="text/css">
     <link rel="stylesheet" href="./css/covid.css" type="text/css">
     <link rel="stylesheet" href="./css/queries.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.js"></script>
     <script src="./lib/js/jquery-3.5.1.min.js"></script>
     <!-- <script src="./lib/js/angular.min.js"></script> -->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.js"></script>
     <script src="./lib/js/angular-route.min.js"></script>
     <script src="./lib/js/angular-animate.min.js"></script>
     <script src="./lib/js/d3.v5.min.js"></script>
@@ -24,7 +24,7 @@
 <body ng-app="covidApp">
     <div ng-controller="covidController">
     <base href="/" />
-    <header ng-include="'views/header.html'" id="theHeader">
+    <header id="theHeader" ng-include="'views/header.html'">
         <div ng-view></div>
     </header>
     
