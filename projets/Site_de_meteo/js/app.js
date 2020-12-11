@@ -200,12 +200,12 @@ $(document).ready(() => {
 
                         if (sunsetTime) {
 
-                            $('.moment-img').attr('src', '../images/icon/moon.png');
+                            $('.moment-img').attr('src', './images/icon/moon.png');
                             $('.city-info ul li').css({
                                 'color': '#cccccc'
                             });
                         } else {
-                            $('.moment-img').attr('src', '../images/icon/sun.png');
+                            $('.moment-img').attr('src', './images/icon/sun.png');
                             $('.city-info ul li').css({
                                 'color': '#000'
                             });
