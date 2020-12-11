@@ -1,7 +1,7 @@
 $(document).ready(() => {
 
     const apiKey = '219ce5d87bc65a79e74dab5eecd270a8';
-    const api = 'http://api.openweathermap.org/data/2.5/find?q=';
+    const api = 'https://api.openweathermap.org/data/2.5/find?q=';
     const selector = $('#country-select');
     let city = $('#city-input');
     let country = $('#country-select');
