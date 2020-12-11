@@ -1,0 +1,137 @@
+@media only screen and (max-width: 1024px) {
+  body header {
+    height: 10vh;
+    min-height: 80px;
+  }
+
+  .app-bg {
+    background-size: cover;
+    height: 90vh;
+  }
+
+  .w3-modal-content {
+    width: 80%;
+  }
+
+  .city-info {
+    margin: 15% auto;
+  }
+
+  .city-info ul li {
+    width: 100%;
+    margin-top: 3.5rem;
+  }
+
+  .second-info ul li {
+    margin-top: 5rem;
+  }
+
+  .city-name,
+.city-time,
+.city-hum,
+.city-features {
+    font-size: 3rem;
+  }
+
+  .city-tempc,
+.temp-ico {
+    font-size: 7rem;
+  }
+
+  .city-feels,
+.feels-ico {
+    font-size: 4rem;
+    font-weight: bolder;
+  }
+
+  .w3-panel {
+    width: 80%;
+    left: 10%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .city-info {
+    margin: 8% auto;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .title {
+    display: none;
+  }
+
+  .city-info {
+    margin: 4% auto;
+    padding-bottom: 4%;
+  }
+
+  .info {
+    margin: 4% auto;
+  }
+
+  .app-bg {
+    overflow: scroll;
+    padding-bottom: 10%;
+  }
+
+  .city-info ul li {
+    margin-top: 2rem;
+  }
+
+  .second-info ul li {
+    margin-top: 3rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .input-container, #country-select {
+    width: 80%;
+    margin: 5% 10%;
+  }
+
+  .city-name,
+.city-time,
+.city-hum,
+.city-features {
+    font-size: 2rem;
+  }
+
+  .city-tempc,
+.temp-ico {
+    font-size: 6rem;
+  }
+
+  .city-feels,
+.feels-ico {
+    font-size: 3rem;
+  }
+
+  .w3-panel {
+    width: 100%;
+    left: 0;
+  }
+
+  .tooltip {
+    top: 15px;
+    right: 80px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .input-container {
+    width: 100%;
+    margin: auto;
+  }
+
+  #country-select {
+    width: 100%;
+    margin: 5% auto;
+  }
+
+  .city-name {
+    font-size: 1.5rem;
+  }
+
+  .city-tempc, .temp-ico {
+    font-size: 4rem;
+  }
+}
+
+/*# sourceMappingURL=media-queries.css.map */

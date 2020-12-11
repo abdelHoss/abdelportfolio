@@ -1,83 +1,101 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="weatherApp">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/weather.css" type="text/css">
-    <script src="lib/js/angular.min.js"></script>
-    <script src="lib/js/jquery-3.5.1.min.js"></script>
-    <script src="lib/js/popper.min.js"></script>
-    <script src="lib/js/bootstrap.min.js"></script>
-
-    <title>weather app</title>
+    <link rel="icon" href="./images/icon/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="lib/css/w3.css">
+    <link rel="stylesheet" href="lib/css/microtip.css">
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/rain-animation.css">
+    <link rel="stylesheet" href="css/snow-animation.css">
+    <script src="./lib/js/jquery-3.5.1.min.js"></script>
+    <script src="./lib/js/tz.js"></script>
+    <script src="./lib/js/sun.js"></script>
+    <title>Weather app</title>
 </head>
 
-<body ng-controller="weatherController">
-    <header ng-include="'views/header.html'"></header>
-    <div id="app-bg" class="container-fluid">
+<body>
+    <header class="w3-container w3-light-blue w3-display-container">
+        <figure>
+            <img src="./images/icon/header-logo.png" alt="header logo" class="header-logo w3-display-left">
+            <span class="title">My weather app</span>
+        </figure>
 
-        <div ng-show="showAlert" class="alert alert-danger alert-dismissible fade show" role="alert">
-            <h3 class="alert-text">Your search doesnt match anything</h3>
-            <button type="button" ng-click="showAlert = false" class="close">
-                <span>&times;</span>
-            </button>
-        </div>
-
-        <div class="text-center input-container">
-            <div class="input-group" ng-class="{'input-danger': isEmpty || showAlert}">
-                <input type="text" ng-keyup="alertEnter(event)" ng-model="cityInput" class="the-input"
-                    placeholder="Enter a city name">
-                    <span class="btn x-input" ng-click="cityInput = ''">&times;</span>
-            </div>
-            <small class="text-danger" ng-show="isEmpty">
-                You must type a city name then press enter !</small>
-        </div>
-
-        <div class="temp_info">
+        <div class="tooltip">
             <ul>
+                <li><span>How to use</span></li>
                 <li>
-                    <span data-toggle="tooltip" data-placement="top" title="The city you've searched"
-                        class="city_name"></span></li>
-
-                <li><span class="city_temp"></span></li>
-
-                <li>
-                    <span data-toggle="tooltip" data-placement="top" title="Feels like" class="city_feels_like"></span>
+                    <div class="triangle"></div>
                 </li>
-
-                <li>
-                    <span data-toggle="tooltip" data-placement="top" title="Features" class="city_des"></span>
-                </li>
-
-                <li>
-                    <span data-toggle="tooltip" data-placement="top" title="Humidity" class="city_hum"></span></li>
             </ul>
         </div>
+        <figure class="modal-trigger">
+            <img src="./images/icon/gear.png" alt="gear image" class="gear-logo w3-display-right">
+        </figure>
+    </header>
+    <main class="w3-container app-bg">
+        <div class="info w3-mobile">
+            <div class="input-container w3-round-xlarge">
+                <input type="text" name="city" id="city-input" class="w3-input w3-round-xlarge"
+                    placeholder="Enter any city name">
+                <span class="erase w3-xxlarge w3-round-xlarge">&times;</span>
+            </div>
+            <select class="w3-select w3-round-xlarge" name="countries" id="country-select">
+                <option selected value="choose">Choose country</option>
+            </select>
+            <div class="w3-container city-info w3-row">
+                <div class="w3-col m6 first-info">
+                    <ul class="w3-ul">
+                        <li><span class="city-name" aria-label="The city you've searched" data-microtip-position="top"
+                                role="tooltip"></span>
+                        </li>
+                        <li aria-label="The temperature" data-microtip-position="top" role="tooltip"><span
+                                class="city-tempc"></span>
+                            <span class="temp-ico"></span> <span class="weather-format w3-xlarge">&#8457;</span></li>
+                        <li><span class="city-time" aria-label="The local time" data-microtip-position="top"
+                                role="tooltip"></span><img class="moment-img" alt="clock-icon"></li>
+
+                    </ul>
+                </div>
+                <div class="w3-col m6 second-info">
+                    <ul class="w3-ul">
+                        <li aria-label="feels like temperature" data-microtip-position="top" role="tooltip"><span
+                                class="city-feels"></span><span class="feels-ico"></span></li>
+                        <li class="city-hum" aria-label="Humidity" data-microtip-position="top" role="tooltip"></li>
+                        <li class="city-features" aria-label="weather feature" data-microtip-position="top"
+                            role="tooltip"></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <div class="snow-container">
+
     </div>
 
+    <div class="w3-panel w3-red">
+        <span class="w3-button w3-display-topright">&times;</span>
+        <h3>Error!</h3>
+        <p class="w3-large"></p>
+    </div>
 
-
-    <div class="modal" id="info-modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title">How to use</h3>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+    <div id="weather-modal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-card-2">
+            <div class="w3-container w3-light-blue">
+                <span class="close w3-button w3-display-topright w3-xlarge">&times;</span>
+                <h2>How to use</h2>
             </div>
-            <div class="modal-body">
-              <p>To use this app type in a city name then press the Enter key or the Done button on a 
-                  smartphone, make sure to type a existing city name.</p>
+            <div class="w3-container">
+                <p>To use this app type in a city name in the input, then press the Enter key or the Done button on a
+                    smartphone, make sure to type a existing city name.</p>
             </div>
-     
-          </div>
         </div>
-      </div>
+    </div>
 </body>
-<script src="scripts/weather.js"></script>
+<script src="js/app.js"></script>
 
 </html>

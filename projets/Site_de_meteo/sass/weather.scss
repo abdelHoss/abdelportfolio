@@ -1,0 +1,234 @@
+$primary-font: notosans;
+$primary-text-color: #2c2c2c;
+$header-height: 15vh;
+
+@font-face {
+    font-family: notosans;
+    src: url('../fonts/NotoSans-Bold.ttf');
+}
+
+html,
+body {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+}
+
+ header {
+    font-family: $primary-font;
+    height: $header-height;
+}
+
+.title {
+    font-size: 30px;
+    color: $primary-text-color;
+    margin-left: 25px;
+}
+
+.header-logo {
+    max-width: 5%;
+    min-width: 3rem;
+    margin-left: 15px;
+    height: auto;
+    cursor: pointer;
+}
+
+.tooltip {
+    width: 160px;
+    height: 40px;
+    background: rgb(46, 46, 46);
+    color: #fff;
+    opacity: 0.8;
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 100px;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            font-size: 16px;
+        }
+
+        li {
+            margin-top: -5px;
+        }
+
+    }
+
+    .triangle {
+        position: relative;
+        left: 19px;
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-left: 20px solid rgb(46, 46, 46);
+        ;
+        border-bottom: 10px solid transparent;
+    }
+}
+
+.gear-logo {
+    max-width: 4%;
+    min-width: 2rem;
+    height: auto;
+    right: 25px;
+}
+
+
+.modal-trigger:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+
+.app-bg {
+    width: 100vw;
+    height: 100vh - $header-height;
+    background-image: url('../images/bg/cloud-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+
+}
+
+.info {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 4vh auto;
+}  
+
+.city-info {
+    text-align: center;
+
+    ul li {
+        margin: auto;
+        border-bottom: 0;
+        padding: 0;
+        margin-top: 3%;
+        cursor: default;
+        width: 80%;
+        display: none;   
+        
+
+        img {
+            max-width: 5em;
+            height: auto;
+            margin-left: 10px;
+
+        }
+
+        
+
+    }
+
+}
+
+.second-info ul li {
+    margin-top: 5%;
+}
+
+
+.weather-format {
+    font-weight: bold;
+    margin-left: 32px;
+    cursor: pointer;
+}
+
+.w3-tooltip {
+
+    .w3-tag,
+    .w3-text {
+        font-size: 10px;
+        opacity: 0.8;
+
+    }
+}
+
+#city-input {
+    width: 90%;
+    outline-width: 0;
+    border-width: 0;
+    font-size: 1.2rem;
+    background: #ffff;
+}
+
+.input-container {
+    display: flex;
+    height: 3rem;
+    margin: 0 auto;
+    background: #ffff;
+    width: 60%;
+}
+
+#country-select {
+    width: 60%;
+    outline-width: 0;
+    background-color: #fff;
+    height: 3em;
+    margin: 10px 20%;
+}
+
+.erase {
+
+    align-self: center;
+    width: 10%;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+.city-name,
+.city-time,
+.city-hum,
+.city-features {
+    font-size: 7vh;
+    font-weight: 600;
+}
+
+.city-tempc,
+.temp-ico {
+    @extend .shadow;
+    font-size: 14vh;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.shadow {
+    text-shadow: 3px 2px 0px rgb(105, 103, 103), 5px 4px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+
+.city-feels,
+.feels-ico {
+    @extend .shadow;
+    font-size: 8vh;
+    font-weight: bolder;
+}
+
+.w3-modal-content {
+    width: 50%;
+}
+
+.w3-panel {
+    width: 60%;
+    position: absolute;
+    top: -15px;
+    text-align: center;
+    left: 20%;
+    border-radius: 10px;
+    padding: 10px 0;
+    display: none;
+    opacity: 0.9;
+}
