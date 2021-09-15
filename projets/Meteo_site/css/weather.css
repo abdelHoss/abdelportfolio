@@ -1,7 +1,12 @@
 @font-face {
-  font-family: notosans;
+  font-family: 'notosans-bold';
   src: url("../fonts/NotoSans-Bold.ttf");
 }
+
+* {
+  font-family: 'notosans-bold';
+}
+
 html,
 body {
   overflow: hidden;
@@ -12,7 +17,7 @@ body {
 }
 
 header {
-  font-family: notosans;
+  font-family: 'notosans-bold';
   height: 15vh;
 }
 
@@ -138,15 +143,15 @@ header {
   height: 3rem;
   margin: 0 auto;
   background: #ffff;
-  width: 60%;
+  width: 40%;
 }
 
 #country-select {
-  width: 60%;
+  width: 40%;
   outline-width: 0;
   background-color: #fff;
   height: 3em;
-  margin: 10px 20%;
+  margin: 10px 30%;
 }
 
 .erase {
