@@ -81,11 +81,29 @@
     margin-top: 3rem;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .input-container, #country-select {
+    width: 60%;
+    margin: 3% 20%;
+  }
+
+  .select-container::after {
+    top: 20%;
+    right: 21.5%;
+  }
+}
+
 @media only screen and (max-width: 450px) {
   .input-container, #country-select {
     width: 80%;
     margin: 5% 10%;
+    padding-right: 10px;
   }
+
+    .select-container::after {
+      right: 13.5%;
+    }
 
   .city-name,
 .city-time,
@@ -114,10 +132,15 @@
     right: 80px;
   }
 }
+
 @media only screen and (max-width: 300px) {
   .input-container {
     width: 100%;
-    margin: auto;
+    margin: 15% auto 0;
+  }
+
+  .select-container::after {
+    right: 3%;
   }
 
   #country-select {

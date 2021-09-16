@@ -146,15 +146,36 @@ header {
   width: 40%;
 }
 
+.select-container {
+	position: relative;
+}
+
+.select-container::after {
+	position: absolute;
+	content: "\2B9F";
+  color: #033a96;
+  font-size: 2rem;
+  top: 15%;
+  right: 31%;
+}
+
+.select-container-down::after {
+	content: "\2B9D";
+}
+
 #country-select {
   width: 40%;
   outline-width: 0;
   background-color: #fff;
+  padding-left: 10px;
   height: 3em;
   margin: 10px 30%;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .erase {
+  color: #033a96;
   align-self: center;
   width: 10%;
   text-align: center;

@@ -26,13 +26,17 @@ $(document).ready(() => {
             $('.app-bg').css("background-image", "url('./images/bg/cloud-bg.jpg')").fadeIn();
             $('.city-info ul li').hide();
         });
-        
-       
+
+
         $('.hidden-snow').removeClass('snow-flakes');
         $('.hidden-rain').removeClass('teardrop');
         clearTimeout(closeALert);
         $('.w3-panel').fadeOut(500);
-    })
+    });
+
+    $('#country-select').focus(() => $('.select-container').addClass('select-container-down'));
+
+    $('#country-select').focusout(() => $('.select-container').removeClass('select-container-down'));
 
 
     $('.modal-trigger').click(() => {
@@ -214,7 +218,7 @@ $(document).ready(() => {
                             $('.app-bg').css({'background-image': background}).fadeIn();
                             $('.city-info ul li').fadeIn(600);
                         });
-                       
+
 
                         if (feature.search('snow') !== -1) {
                             $('.hidden-snow').addClass('snow-flakes');
