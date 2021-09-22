@@ -1,4 +1,6 @@
 $('.carousel').carousel();
+const jsonData = 'http://localhost:3000/data/infos.json';
+// const jsonData = 'https://abdelhoss.github.io/abdelportfolio/data/infos.json';
 
 $(document).ready(function () {
   const langage = sessionStorage.getItem("abdel_portfolio_lang");
@@ -22,7 +24,7 @@ $(document).ready(function () {
 });
 
 async function getJson() {
-  const getData = await $.get('https://abdelhoss.github.io/abdelportfolio/data/infos.json')
+  const getData = await $.get(jsonData)
   return getData[0];
 }
 

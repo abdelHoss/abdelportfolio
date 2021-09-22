@@ -93,9 +93,24 @@
                 "color": "#a06ae6"
             },
             {
+                "technology": "Node js",
+                "image": "nodejs.png",
+                "color": "#33cc33"
+            },
+            {
+                "technology": "Python",
+                "image": "python.jpg",
+                "color": "#ffcc00"
+            },
+            {
                 "technology": "MySQL",
                 "image": "mysql.png",
                 "color": "#3487e7"
+            },
+            {
+                "technology": "MongoDb",
+                "image": "mongodb.png",
+                "color": "#00802b"
             },
             {
                 "technology": "ASP.NET",
@@ -105,7 +120,17 @@
             {
                 "technology": "Bootstrap",
                 "image": "bootstrap.png",
-                "color": "#d51bee"
+                "color": "#563d7c"
+            },
+            {
+                "technology": "Material Design",
+                "image": "material-design.jpg",
+                "color": "#adad85"
+            },
+            {
+                "technology": "Scss",
+                "image": "sass.jpg",
+                "color": "#ff33cc"
             },
             {
                 "technology": "JQuery",
@@ -116,6 +141,11 @@
                 "technology": "Angular",
                 "image": "angular.png",
                 "color": "#ff1c1c"
+            },
+            {
+                "technology": "React js",
+                "image": "reactjs.png",
+                "color": "#00ffff"
             }
         ],
         "projects_infos": [
