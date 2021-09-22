@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Abdel Portfolio</title>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css"  type="text/css">
+    <link rel="stylesheet" href="libraries/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="icon" href="images/icons/coffee-icon.ico" type="images/ico">
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="libraries/js/jquery-3.6.0.min.js"></script>
+    <script src="libraries/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -24,20 +24,26 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        
+
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
-                            <li><a href="#" class="header-link">Index</a></li>
-                            <li><a href="#about" class="header-link">À Propos</a></li>
-                            <li><a href="#portfolio" class="header-link">Portfolio</a></li>
-                            <li><a href="#coord" class="header-link">Coordonnée</a></li>
+                            <li><a href="#about"></a></li>
+                            <li><a href="#portfolio"></a></li>
+                            <li><a href="#coord"></a></li>
+                            <li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"
+                                    href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="btn btn-link" hreflang="english">English</a></li>
+                                    <li><a class="btn btn-link" hreflang="french">Français</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </nav>
                 <div class="header__content text-center">
                     <h1 class="header__content__title">Abdulrahman El-Houssami</h1>
-                    <h3 class="header_subtitle">Développeur web junior</h3>
+                    <h3 class="header_subtitle"></h3>
                 </div>
             </div>
         </header>
@@ -45,9 +51,9 @@
         <section id="about" class="about">
             <div class="container about__container--narrow">
                 <div class="page-section">
-                    <h2 class="page-section__title">À propos</h2>
+                    <h2 class="page-section__title"></h2>
                     <img class="page-section__title-style" src="images/title-style.png" alt="">
-                    <p class="page-section__paragraph">Fanatique et ammateur de code, tout à commencé lorsque j'ai entendu parlé du domaine de la programmation sur internet qui m'a énormément épaté, par la suite cela m'a inspiré à débuter mes recherche mais je ne savais pas par où commencer puisque le domaine du développement est très large, ainsi en débutant par apprendre sur des tutoriels en ligne, cela m'a introduit au domaine du développement web dont je suis tombé en amour directement. J'ai poursuivi des étude en soutien informatique mais ce n'était pas ma force, heureusement j'ai réussi à acquérir le diplôme et je me suis mis à la recherche d'un programme qui enseignait ma passion et je vous annonce avec bonheur que je suis en ce moment étudiant au programme Développement de sites web transactionnels du collège Ahuntsic.</p>
+                    <p class="page-section__paragraph"></p>
                 </div>
             </div>
         </section>
@@ -55,175 +61,18 @@
         <section class="skill skill--bg">
             <div class="container skill__container--narrow">
                 <div class="page-section">
-                    <h2 class="page-section__title page-section__title--white">Mes Connaissances</h2>
+                    <h2 class="page-section__title page-section__title--white"></h2>
                     <img class="page-section__title-style" src="images/title-style-white.png" alt="">
-                    <p class="page-section__paragraph page-section__paragraph--white">Grâce à mon parcours scolaire j'ai gagné plusieurs connaissances et expériences avec des logiciels utilisées pour le design UX/UI et des outils pour manipuler le côté client et serveur d'une application web dont.</p>
-
+                    <p class="page-section__paragraph page-section__paragraph--white"></p>
                     <div id="theCarousel" class="carousel slide" data-ride="carousel">
-
-                        <div class="carousel-inner" role="listbox">
-
-                            <div class="item active">
-                                <div class="row gutters-60">
-
-                                    <div class="col-md-4">
-                                        <div class="thumbnail text-center">
-                                            <img class="skill-image" src="images/skills/adobe-photoshop.png" alt="">
-                                            <h4 class="skill__single-part__title">ADOBE PHOTOSHOP</h4>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width:80%;background-color: #7FB7FA;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="thumbnail text-center">
-                                            <img class="skill-image" src="images/skills/adobe-illustrator.png" alt="">
-                                            <h4 class="skill__single-part__title">ADOBE ILLUSTRATOR</h4>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width:80%;background-color: #FFAC1B;;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="thumbnail text-center">
-                                            <img class="skill-image" src="images/skills/adobe-xd.png" alt="">
-                                            <h4 class="skill__single-part__title">ADOBE XD</h4>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width:80%;background-color: #C99AFF;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="row gutters-60">
-
-                                    <div class="col-md-4">
-                                        <div class="thumbnail text-center">
-                                            <img class="skill-image" src="images/skills/html5.png" alt="">
-                                            <h4 class="skill__single-part__title">HTML5</h4>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width:80%;background-color: #ff5506;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item col-md-4">
-                                        <div class="thumbnail text-center">
-                                            <img class="skill-image" src="images/skills/CSS3.png" alt="">
-                                            <h4 class="skill__single-part__title">CSS3</h4>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width:80%;background-color: #0948f5;;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="item col-md-4">
-                                        <div class="thumbnail text-center">
-                                            <img class="skill-image" src="images/skills/js.png" alt="">
-                                            <h4 class="skill__single-part__title">Javascript</h4>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width:80%;background-color: #dac71e;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="row gutters-60">
-
-                                    <div class="col-md-4">
-                                        <div class="thumbnail text-center">
-                                            <img class="skill-image" src="images/skills/php.png" alt="">
-                                            <h4 class="skill__single-part__title">PHP</h4>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width:80%;background-color: #a06ae6;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item col-md-4">
-                                        <div class="thumbnail text-center">
-                                            <img class="skill-image" src="images/skills/mysql.png" alt="">
-                                            <h4 class="skill__single-part__title">MySQL</h4>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width:80%;background-color: #3487e7;;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="item col-md-4">
-                                        <div class="thumbnail text-center">
-                                            <img class="skill-image" src="images/skills/asp.jpg" alt="">
-                                            <h4 class="skill__single-part__title">ASP.NET</h4>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width:80%;background-color: #0f1ee4;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="row gutters-60">
-
-                                    <div class="col-md-4">
-                                        <div class="thumbnail text-center">
-                                            <img class="skill-image" src="images/skills/bootstrap.png" alt="">
-                                            <h4 class="skill__single-part__title">Bootstrap</h4>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width:80%;background-color: #d51bee;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item col-md-4">
-                                        <div class="thumbnail text-center">
-                                            <img class="skill-image" src="images/skills/jquery.png" alt="">
-                                            <h4 class="skill__single-part__title">JQuery</h4>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width:80%;background-color: #1d4bc9;;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="item col-md-4">
-                                        <div class="thumbnail text-center">
-                                            <img class="skill-image" src="images/skills/angular.png" alt="">
-                                            <h4 class="skill__single-part__title">Angular</h4>
-                                            <div class="progress">
-                                                <div class="progress-bar" role="progressbar" style="width:80%;background-color: #ff1c1c;">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-
+                        <div class="carousel-inner" role="listbox"></div>
                     </div>
-                        <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
-                            <span aria-hidden="true"><img src="images/icons/left.png"></span>
-                        </a>
-                        <a class="right carousel-control" href="#theCarousel" role="button" data-slide="next">
-                            <span aria-hidden="true"><img src="images/icons/right.png"></span>
-                        </a>
+                    <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
+                        <span aria-hidden="true"><img src="images/icons/left.png"></span>
+                    </a>
+                    <a class="right carousel-control" href="#theCarousel" role="button" data-slide="next">
+                        <span aria-hidden="true"><img src="images/icons/right.png"></span>
+                    </a>
 
                 </div>
             </div>
@@ -233,113 +82,10 @@
         <section id="portfolio" class="portfolio">
             <div class="container">
                 <div class="page-section">
-                    <h2 class="page-section__title">Mon Portfolio</h2>
+                    <h2 class="page-section__title"></h2>
                     <img class="page-section__title-style" src="images/title-style.png" alt="">
-                    <p class="page-section__paragraph">Voici quelques projets personnels dans mon portfolio, vous pouvez les découvrir et éventuellement vous amuser un peu. </p>
-                    <div class="row gutters-40">
-                        <div class="col-md-4">
-                            <div class="portfolio__single-section mix category-a category-b category-c" data-order="1">
-                                <img class="portfolio__single-section__image img-responsive" src="images/projets/calculatrice.JPG" alt="">
-                                <div class="portfolio__single-section__overlay">
-                                    <div class="overlay-content">
-                                        <h4>Calculatrice</h4>
-                                        <p>Javascript</p>
-                                    </div>
-                                    <div class="portfolio__single-section__search-icon">
-                                        <a href="projets/Calculator/calculate.html"><img src="images/search-icon.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="portfolio__single-section mix category-a category-c" data-order="2">
-                                <img class="portfolio__single-section__image img-responsive" src="images/projets/facture.JPG" alt="">
-                                <div class="portfolio__single-section__overlay">
-                                    <div class="overlay-content">
-                                        <h4>Facture de restaurant</h4>
-                                        <p>Javascript DOM</p>
-                                    </div>
-                                    <div class="portfolio__single-section__search-icon">
-                                        <a href="projets/Facture_restaurant/resto.html"><img src="images/search-icon.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="portfolio__single-section mix category-c" data-order="3">
-                                <img class="portfolio__single-section__image img-responsive" src="images/projets/covid_app.JPG" alt="">
-                                <div class="portfolio__single-section__overlay">
-                                    <div class="overlay-content">
-                                        <h4>Application du covid-19</h4>
-                                        <p>Jquery, d3.js et angular.js</p>
-                                    </div>
-                                    <div class="portfolio__single-section__search-icon">
-                                        <a href="projets/Covid_app/"><img src="images/search-icon.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row gutters-40">
-                        <div class="col-md-4">
-                            <div class="portfolio__single-section mix category-b category-d" data-order="4">
-                                <img class="portfolio__single-section__image img-responsive" src="images/projets/tictac.JPG" alt="">
-                                <div class="portfolio__single-section__overlay">
-                                    <div class="overlay-content">
-                                        <h4>Jeu Tic-Tac-To</h4>
-                                        <p>Javascript</p>
-                                    </div>
-                                    <div class="portfolio__single-section__search-icon">
-                                        <a href="projets/Tic-tac-to/tic.html"><img src="images/search-icon.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="portfolio__single-section mix category-b category-d" data-order="5">
-                                <img class="portfolio__single-section__image img-responsive" src="images/projets/netchill.JPG" alt="">
-                                <div class="portfolio__single-section__overlay">
-                                    <div class="overlay-content">
-                                        <h4>Site de films</h4>
-                                        <p>Php, Mysql et Codeigniter</p>
-                                    </div>
-                                    <div class="portfolio__single-section__search-icon">
-                                        <a href="http://netchillmovie.epizy.com/netchill/"><img src="images/search-icon.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="portfolio__single-section mix category-b category-d" data-order="5">
-                                <img class="portfolio__single-section__image img-responsive" src="images/projets/weather.JPG" alt="">
-                                <div class="portfolio__single-section__overlay">
-                                    <div class="overlay-content">
-                                        <h4>Site de Météo</h4>
-                                        <p>XML et jQuery</p>
-                                    </div>
-                                    <div class="portfolio__single-section__search-icon">
-                                        <a href="projets/Meteo_site/index.html"><img src="images/search-icon.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-4">
-                            <div class="portfolio__single-section mix category-b category-d" data-order="5">
-                                <img class="portfolio__single-section__image img-responsive" src="images/projets/developper_copy.jpg" alt="">
-                                <div class="portfolio__single-section__overlay">
-                                    <div class="overlay-content">
-                                        <h4>Encore à venir</h4>
-                                    </div>
-                                    <div class="portfolio__single-section__search-icon">
-                                        <a href="#"><img src="images/search-icon.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+                    <p class="page-section__paragraph"></p>
+                    <div class="projects"></div>
                 </div>
             </div>
         </section>
@@ -348,14 +94,16 @@
 
         <footer id="coord" class="footer footer--bg">
             <div class="container text-center">
-                <h1 class="footer__title">Coordonnées</h1>
+                <h1 class="footer__title"></h1>
                 <ul class="footer__contact-information">
-                    <li><a href="tel:5146546160"><img class="phone-icon" src="images/icons/phone-icon.svg">(514) 654-6160</a></li>
-                    <li><a href="mailto:abdelhoussami@outlook.com"><i class="material-icons">email</i>abdelhoussami@outlook.com</a></li>
+                    <li><a href="tel:5146546160"><img class="phone-icon" src="images/icons/phone-icon.svg">(514)
+                            654-6160</a></li>
+                    <li><a href="mailto:abdelhoussami@outlook.com"><i
+                                class="material-icons">email</i>abdelhoussami@outlook.com</a></li>
                 </ul>
             </div>
             <div class="container text-center">
-                <p class="footer__paragraph">&copy; 2020 Portfolio de Abdulrahman El-Houssami</p>
+                <p class="footer__paragraph"></p>
             </div>
         </footer>
     </div>

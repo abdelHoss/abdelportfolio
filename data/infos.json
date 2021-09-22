@@ -1,0 +1,149 @@
+[
+    {
+        "french": {
+            "navbar": {
+                "first_link": "À Propos",
+                "second_link": "Portfolio",
+                "third_link": "Coordonnées",
+                "fourth_link": "Langue"
+            },
+            "body": {
+                "profession": "Développeur web junior",
+                "about": "Amoureux et fan de codage, tout à commencé lorsque j'ai entendu parlé du domaine de la programmation sur internet qui m'a énormément épaté, par la suite cela m'a inspiré à débuter mes recherche mais je ne savais pas par où commencer puisque le domaine du développement est très large, ainsi en débutant par apprendre sur des tutoriels en ligne, cela m'a introduit au domaine du développement web dont je suis tombé en amour directement. J'ai poursuivi des étude en soutien informatique mais ce n'était pas ma force, heureusement j'ai réussi à acquérir le diplôme et je me suis mis à la recherche d'un programme scolaire qui enseignait ma passion et je vous annonce avec bonheur que je suis un gradué du programme de Développement de sites web transactionnels au collège Ahuntsic.",
+                "title": "Mes Connaissances",
+                "study": "Grâce à mon parcours scolaire j'ai gagné plusieurs connaissances et expériences avec des logiciels utilisées pour le design UX/UI et des outils pour manipuler le côté client et serveur d'une application web dont."
+            },
+            "projects": {
+                "title": "Mon portfolio",
+                "intro": "Voici quelques projets personnels dans mon portfolio, vous pouvez les découvrir et éventuellement vous amuser un peu. ",
+                "list": [
+                    "Calculatrice",
+                    "Jeu Tic-Tac-To",
+                    "Site web de Météo",
+                    "Application web de covid-19",
+                    "Application web de films avec base de données",
+                    "Encore à venir..."
+                ]
+            },
+            "footer": "Portfolio de Abdulrahman El-Houssami",
+            "conjunction": "et"
+        },
+        "english": {
+            "navbar": {
+                "first_link": "About me",
+                "second_link": "Portfolio",
+                "third_link": "Contact Details",
+                "fourth_link": "langage"
+            },
+            "body": {
+                "profession": "Junior Web Developper",
+                "about": "Big Lover and fan of coding, it all started when I heard about the field of programming on the internet which amazed a lot and later it inspired me to start my research for learning purposes but I did not know where to start since the field of development is a wide one, so I started by learning from online tutorials, it had me introduced to web development in which I liked immediately. I pursued studies in computer support but it was not my strength, luckily I succeed in acquiring the diploma and I started looking for a course that could teach me my passion and I am happy to announce that I have graduated from the Transactional Websites Development program at Ahuntsic College.",
+                "title": "My knowledge",
+                "study": "Thanks to my school career I have gained several knowledge and experiences with some software used for UX / UI design and developing tools to manipulate the client and server-side of a web application including."
+            },
+            "projects": {
+                "title": "My portfolio",
+                "intro": "Here are some personal projects in my portfolio, you can discover them and possibly have a little fun by trying them.",
+                "list": [
+                    "Calculator",
+                    "Tic-Tac-To Game",
+                    "Weather website",
+                    "Covid-19 web application",
+                    "Movies web application with database",
+                    "More to come..."
+                ]
+            },
+            "footer": "Abdulrahman El-Houssami portfolio",
+            "conjunction": "and"
+        },
+        "knowledge": [
+            {
+                "technology": "ADOBE PHOTOSHOP",
+                "image": "adobe-photoshop.png",
+                "color": "#7FB7FA"
+            },
+            {
+                "technology": "ADOBE ILLUSTRATOR",
+                "image": "adobe-illustrator.png",
+                "color": "#FFAC1B"
+            },
+            {
+                "technology": "ADOBE XD",
+                "image": "adobe-xd.png",
+                "color": "#C99AFF"
+            },
+            {
+                "technology": "HTML5",
+                "image": "html5.png",
+                "color": "#ff5506"
+            },
+            {
+                "technology": "CSS3",
+                "image": "CSS3.png",
+                "color": "#0948f5"
+            },
+            {
+                "technology": "Javascript",
+                "image": "js.png",
+                "color": "#dac71e"
+            },
+            {
+                "technology": "PHP",
+                "image": "php.png",
+                "color": "#a06ae6"
+            },
+            {
+                "technology": "MySQL",
+                "image": "mysql.png",
+                "color": "#3487e7"
+            },
+            {
+                "technology": "ASP.NET",
+                "image": "asp.jpg",
+                "color": "#0f1ee4"
+            },
+            {
+                "technology": "Bootstrap",
+                "image": "bootstrap.png",
+                "color": "#d51bee"
+            },
+            {
+                "technology": "JQuery",
+                "image": "jquery.png",
+                "color": "#1d4bc9"
+            },
+            {
+                "technology": "Angular",
+                "image": "angular.png",
+                "color": "#ff1c1c"
+            }
+        ],
+        "projects_infos": [
+            {
+                "technology": "Html, Css ++ Javascript",
+                "image": "calculator.jpg",
+                "src": "projets/Calculator/calculate.html"
+            },
+            {
+                "technology": "Html, Css ++ Javascript",
+                "image": "tictac.jpg",
+                "src": "projets/Tic-tac-to/tic.html"
+            },
+            {
+                "technology": "Html, Css, W3.css, Ajax, XML ++ jQuery",
+                "image": "weather.jpg",
+                "src": "projets/Meteo_site/index.html"
+            },
+            {
+                "technology": "Html, Css, Bulma.css, Javascript, Ajax,  D3.js ++ Angular.js",
+                "image": "covid_app.jpg",
+                "src": "http://abdelportfolio.epizy.com/covid_app/"
+            },
+            {
+                "technology": "Html, Css, Bootstrap.css, Javascript, Ajax, Php, Mysql ++ Codeigniter",
+                "image": "netchill.jpg",
+                "src": "http://abdelportfolio.epizy.com/netchill/"
+            }
+        ]
+    }
+]

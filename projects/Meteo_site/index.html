@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icon/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="lib/css/w3.css">
+    <link rel="stylesheet" href="lib/css/microtip.css">
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/rain-animation.css">
+    <link rel="stylesheet" href="css/snow-animation.css">
+    <script src="../../libraries/js/jquery-3.6.0.min.js"></script>
+    <script src="./lib/js/tz.js"></script>
+    <script src="./lib/js/sun.js"></script>
+    <title>Weather app</title>
+</head>
+
+<body>
+    <header class="w3-container w3-light-blue w3-display-container">
+        <figure>
+            <img src="./images/icon/header-logo.png" alt="header logo" class="header-logo w3-display-left">
+            <span class="title">My weather app</span>
+        </figure>
+
+        <div class="tooltip">
+            <ul>
+                <li><span>How to use</span></li>
+                <li>
+                    <div class="triangle"></div>
+                </li>
+            </ul>
+        </div>
+        <figure class="modal-trigger">
+            <img src="./images/icon/gear.png" alt="gear image" class="gear-logo w3-display-right">
+        </figure>
+    </header>
+    <main class="w3-container app-bg">
+        <div class="info w3-mobile">
+            <div class="input-container w3-round-xlarge">
+                <input type="text" name="city" id="city-input" class="w3-input w3-round-xlarge"
+                    placeholder="Enter any city name">
+                <span class="erase w3-xxlarge w3-round-xlarge">&times;</span>
+            </div>
+            <div class="select-container">
+              <select class="w3-select w3-round-xlarge" name="countries" id="country-select">
+                <option selected value="choose">Choose country</option>
+              </select>
+            </div>
+            <div class="w3-container city-info w3-row">
+                <div class="w3-col m6 first-info">
+                    <ul class="w3-ul">
+                        <li><span class="city-name" aria-label="The city you've searched" data-microtip-position="top"
+                                role="tooltip"></span>
+                        </li>
+                        <li aria-label="The temperature" data-microtip-position="top" role="tooltip"><span
+                                class="city-tempc"></span>
+                            <span class="temp-ico"></span> <span class="weather-format w3-xlarge">&#8457;</span></li>
+                        <li><span class="city-time" aria-label="The local time" data-microtip-position="top"
+                                role="tooltip"></span><img class="moment-img" alt="clock-icon"></li>
+
+                    </ul>
+                </div>
+                <div class="w3-col m6 second-info">
+                    <ul class="w3-ul">
+                        <li aria-label="feels like temperature" data-microtip-position="top" role="tooltip"><span
+                                class="city-feels"></span><span class="feels-ico"></span></li>
+                        <li class="city-hum" aria-label="Humidity" data-microtip-position="top" role="tooltip"></li>
+                        <li class="city-features" aria-label="weather feature" data-microtip-position="top"
+                            role="tooltip"></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <div class="snow-container">
+
+    </div>
+
+    <div class="w3-panel w3-red">
+        <span class="w3-button w3-display-topright">&times;</span>
+        <h3>Error!</h3>
+        <p class="w3-large"></p>
+    </div>
+
+    <div id="weather-modal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-card-2">
+            <div class="w3-container w3-light-blue">
+                <span class="close w3-button w3-display-topright w3-xlarge">&times;</span>
+                <h2>How to use</h2>
+            </div>
+            <div class="w3-container">
+                <p>To use this app type in a city name in the input, then press the Enter key or the Done button on a
+                    smartphone, make sure to type a existing city name.</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/app.js"></script>
+
+</html>
