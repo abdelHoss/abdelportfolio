@@ -88,7 +88,7 @@ $(document).ready(() => {
 
     $.ajax({
             type: 'GET',
-            url: 'https://abdelhoss.github.io/abdelportfolio/projets/Meteo_site/data/countries.json',
+            url: 'https://abdelhoss.github.io/abdelportfolio/projects/Meteo_site/data/countries.json',
             dataType: 'json',
             success: (data) => {
                 countriesTab = data;
