@@ -122,17 +122,17 @@
             {
                 "technology": "Html, Css ++ Javascript",
                 "image": "calculator.jpg",
-                "src": "projets/Calculator/calculate.html"
+                "src": "projects/Calculator/calculate.html"
             },
             {
                 "technology": "Html, Css ++ Javascript",
                 "image": "tictac.jpg",
-                "src": "projets/Tic-tac-to/tic.html"
+                "src": "projects/Tic-tac-to/tic.html"
             },
             {
                 "technology": "Html, Css, W3.css, Ajax, XML ++ jQuery",
                 "image": "weather.jpg",
-                "src": "projets/Meteo_site/index.html"
+                "src": "projects/Meteo_site/index.html"
             },
             {
                 "technology": "Html, Css, Bulma.css, Javascript, Ajax,  D3.js ++ Angular.js",

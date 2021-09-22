@@ -102,7 +102,7 @@ function setProjects(data, langage) {
                 </div>
                 <div class="portfolio__single-section__search-icon">
                     <a href="${item.src}"><img src="images/search-icon.png"
-                            alt=""></a>
+                            alt="Search Icon"></a>
                 </div>
             </div>
         </div>
@@ -117,7 +117,7 @@ function setProjects(data, langage) {
                   <h4>${data[langage].projects.list[data.projects_infos.length]}</h4>
               </div>
               <div class="portfolio__single-section__search-icon">
-                  <a href="#"><img src="images/search-icon.png" alt=""></a>
+                  <a href="#"><img src="images/search-icon.png" alt="Search Icon"></a>
               </div>
           </div>
       </div>
