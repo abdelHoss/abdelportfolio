@@ -94,7 +94,7 @@ function setProjects(data, langage) {
     ProjectsContent += `<div class="col-md-4">
         <div class="portfolio__single-section mix category-a category-b category-c" data-order="${index + 1}">
             <img class="portfolio__single-section__image img-responsive"
-                src="images/projets/${item.image}" alt="${data[langage].projects.list[index]}">
+                src="images/projects/${item.image}" alt="${data[langage].projects.list[index]}">
             <div class="portfolio__single-section__overlay">
                 <div class="overlay-content">
                     <h4>${data[langage].projects.list[index]}</h4>
