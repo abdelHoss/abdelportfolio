@@ -46,7 +46,7 @@ function setHeader(data) {
 }
 
 function setBody(data) {
-  $('.page-section__title:eq(0)').text(data.navbar.second_link);
+  $('.page-section__title:eq(0)').text('Introduction');
   $('.page-section__title:eq(1)').text(data.body.title);
   $('.page-section__title:eq(2)').text(data.projects.title);
   $('.page-section__paragraph:eq(0)').text(data.body.about);
