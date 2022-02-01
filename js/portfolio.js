@@ -102,7 +102,7 @@ function setProjects(data, langage) {
                     <p>${technologies}</p>
                 </div>
                 <div class="portfolio__single-section__search-icon">
-                    <a href="${item.src}"><img src="images/search-icon.png"
+                    <a href="${item.src}" target="_blank"><img src="images/search-icon.png"
                             alt="Search Icon"></a>
                 </div>
             </div>
@@ -112,7 +112,7 @@ function setProjects(data, langage) {
       ProjectsContent += `<div class="col-md-4">
       <div class="portfolio__single-section mix category-b category-d" data-order="${data.projects_infos.length}">
           <img class="portfolio__single-section__image img-responsive"
-              src="images/projects/developper_card.jpg" alt="">
+              src="images/projects/developper_card.jpg" alt="More to come...">
           <div class="portfolio__single-section__overlay">
               <div class="overlay-content">
                   <h4>${data[langage].projects.list[data.projects_infos.length]}</h4>
