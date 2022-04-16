@@ -173,6 +173,7 @@ header {
   margin: 10px 30%;
   -webkit-appearance: none;
   appearance: none;
+  cursor: pointer;
 }
 
 .erase {
