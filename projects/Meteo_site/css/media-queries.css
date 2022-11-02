@@ -1,3 +1,9 @@
+@media only screen and (min-width: 769px) {
+  #country-select {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+}
 
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
   .title {
@@ -39,19 +45,19 @@
   }
 
   .city-name,
-.city-time,
-.city-hum,
-.city-features {
+  .city-time,
+  .city-hum,
+  .city-features {
     font-size: 3rem;
   }
 
   .city-tempc,
-.temp-ico {
+  .temp-ico {
     font-size: 7rem;
   }
 
   .city-feels,
-.feels-ico {
+  .feels-ico {
     font-size: 4rem;
     font-weight: bolder;
   }
@@ -61,11 +67,7 @@
     left: 10%;
   }
 }
-@media only screen and (max-width: 768px) {
-  .city-info {
-    margin: 8% auto;
-  }
-}
+
 @media only screen and (max-width: 550px) {
   .title {
     display: none;
@@ -95,12 +97,17 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .city-info {
+    margin: 8% auto;
+  }
+
   .tooltip {
     top: 30px;
     right: 80px;
   }
 
-  .input-container, #country-select {
+  .input-container,
+  #country-select {
     width: 60%;
     margin: 3% 20%;
   }
@@ -112,30 +119,31 @@
 }
 
 @media only screen and (max-width: 450px) {
-  .input-container, #country-select {
+  .input-container,
+  #country-select {
     width: 80%;
     margin: 5% 10%;
     padding-right: 10px;
   }
 
-    .select-container::after {
-      right: 13.5%;
-    }
+  .select-container::after {
+    right: 13.5%;
+  }
 
   .city-name,
-.city-time,
-.city-hum,
-.city-features {
+  .city-time,
+  .city-hum,
+  .city-features {
     font-size: 2rem;
   }
 
   .city-tempc,
-.temp-ico {
+  .temp-ico {
     font-size: 6rem;
   }
 
   .city-feels,
-.feels-ico {
+  .feels-ico {
     font-size: 3rem;
   }
 
@@ -151,7 +159,6 @@
 }
 
 @media only screen and (max-width: 300px) {
-
   .input-container {
     width: 100%;
     margin: 15% auto 0;
@@ -170,9 +177,9 @@
     font-size: 1.5rem;
   }
 
-  .city-tempc, .temp-ico {
+  .city-tempc,
+  .temp-ico {
     font-size: 4rem;
   }
 }
 
-/*# sourceMappingURL=media-queries.css.map */

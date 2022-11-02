@@ -1,4 +1,7 @@
 $(document).ready(() => {
+    if(window.matchMedia("(max-width: 767px)").matches){
+   $('.select-container').removeClass('select-container');
+}
 
     const apiKey = '219ce5d87bc65a79e74dab5eecd270a8';
     const api = 'https://api.openweathermap.org/data/2.5/find?q=';

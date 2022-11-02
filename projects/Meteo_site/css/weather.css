@@ -171,9 +171,7 @@ header {
   padding-left: 10px;
   height: 3em;
   margin: 10px 30%;
-  -webkit-appearance: none;
-  appearance: none;
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 .erase {
@@ -227,4 +225,3 @@ header {
   opacity: 0.9;
 }
 
-/*# sourceMappingURL=weather.css.map */
