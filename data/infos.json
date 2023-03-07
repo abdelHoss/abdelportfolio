@@ -162,24 +162,29 @@
                 "src": "projects/Tic-tac-to/tic.html"
             },
             {
-                "technology": "Html, Css, W3.css, Ajax, XML ++ jQuery",
+                "technology": "W3.css, Ajax, XML ++ jQuery",
                 "image": "weather.jpg",
                 "src": "projects/Meteo_site/index.html"
             },
             {
-                "technology": "Html, Css, Bulma.css, Javascript, Ajax,  D3.js ++ Angular.js",
+                "technology": "Bulma.css, Javascript, Ajax,  D3.js ++ Angular.js",
                 "image": "covid_app.jpg",
                 "src": "http://abdelportfolio.epizy.com/covid_app/"
             },
             {
-                "technology": "Html, Scss, Bootstrap.css, Javascript, Ajax, Php, Mysql ++ Codeigniter",
+                "technology": "Scss, Bootstrap.css, Javascript, Ajax, Php, Mysql ++ Codeigniter",
                 "image": "netchill.jpg",
                 "src": "http://abdelportfolio.epizy.com/netchill/"
             },
             {
-                "technology": "Jsx, css, React js, Material ui, Node js, Express, Firebase, ++ Puppeteer",
+                "technology": " React.js, Material ui, Node.js, Express, Firebase, ++ Puppeteer",
                 "image": "craving_voyce.png",
                 "src": "https://craving-voyce.web.app/"
+            },
+            {
+                "technology": "Vue.js, Vuestic, Python, Flask, ++ Google cloud",
+                "image": "vegovoyce.JPG.png",
+                "src": "https://vegovoyce.com/"
             }
         ]
     }
