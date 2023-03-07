@@ -52,6 +52,7 @@
                     "Covid-19 web application",
                     "Movies web application with database",
                     "Craving Voyce",
+                    "VegoVoyce",
                     "More to come..."
                 ]
             },
@@ -183,7 +184,7 @@
             },
             {
                 "technology": "Vue.js, Vuestic, Python, Flask, ++ Google cloud",
-                "image": "vegovoyce.JPG.png",
+                "image": "vegovoyce.jpg",
                 "src": "https://vegovoyce.com/"
             }
         ]
